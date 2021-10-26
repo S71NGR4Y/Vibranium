@@ -141,7 +141,7 @@ class User extends BaseModel {
         if ($user->loaded()) {
             $host = $_SERVER['HTTP_HOST'] ? 'http://'.$_SERVER['HTTP_HOST'] : '';
             $host = $host ?: $this->pixie->config->get('parameters.host');
-            $host = $host ?: 'http://hackazon.com';
+            $host = $host ?: 'http://ShoppingStreet.com';
 
             return array(
                 'to' => $email instanceof VulnerableField ? $email->raw() : $email,

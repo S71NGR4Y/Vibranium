@@ -3,7 +3,7 @@
  * @var array $data User data
  */
 ?>
-Welcome to hackazon.com, <?php echo $data['username']; ?>!
+Welcome to ShoppingStreet.com, <?php echo $data['username']; ?>!
 
 Now you can log in with your credentials:
 
@@ -17,4 +17,4 @@ Last name: <?php echo $data['last_name'] . "\n"; ?>
 Email: <?php echo $data['email'] . "\n"; ?>
 
 Best regards.
-Team of hackazon.com.
+Team of ShoppingStreet.com.

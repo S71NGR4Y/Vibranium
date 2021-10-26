@@ -43,13 +43,13 @@
 		</div>
         <div class="col-sm-4">
             <h3>Modern Business</h3>
-            <h4>Hackazon</h4>
+            <h4>Shopping Street </h4>
             <p>
-                Vormir<br>
-                Knowhere<br>
+                CA<br>
+                USA<br>
             </p>
             <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (555) 984-3600</p>
-            <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">feedback@hackazon.webscantest.com</a></p>
+            <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">feedback@ShoppingStreet.webscantest.com</a></p>
             <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
             <ul class="list-unstyled list-inline list-social-icons">
                 <li class="tooltip-social facebook-link"><a href="#facebook-page" onclick="window.open(

@@ -110,7 +110,7 @@ class BaseController extends Controller
             }
         }
 
-        // Check Hackazon is installed
+        // Check ShoppingStreet is installed
         if (!$this->installationProcess && !$this->pixie->session->get('isInstalled')) {
             try {
                 /** @var Connection $pdov */

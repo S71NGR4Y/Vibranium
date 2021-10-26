@@ -31,7 +31,7 @@
 </table>
 
 <?php if (isset($configsToAdd) && count($configsToAdd)): ?>
-    <div class="alert alert-info">Hackazon can't create all necessary files, so you have to create the following
+    <div class="alert alert-info">ShoppingStreet can't create all necessary files, so you have to create the following
         files manually and copy indicated content inside of it.
     </div>
     <?php $counter = 0; ?>

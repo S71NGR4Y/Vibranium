@@ -3,7 +3,7 @@
 
 2. Then: File -> Import -> General -> Existing Project
 
-3. Select Helpdesk root directory in hackazon project "subprojects\Helpdesk"
+3. Select Helpdesk root directory in ShoppingStreet project "subprojects\Helpdesk"
 
 4 Click Finish.
 

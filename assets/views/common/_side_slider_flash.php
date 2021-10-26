@@ -1,4 +1,4 @@
-<div id="flashBanner">
+<!-- <div id="flashBanner">
     <p>
         To view this page ensure that Adobe Flash Player version
         11.1.0 or greater is installed.
@@ -8,4 +8,4 @@
         document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='"
             + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" );
     </script>
-</div>
+</div> -->

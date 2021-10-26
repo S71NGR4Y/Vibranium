@@ -16,11 +16,11 @@
         </ol>
 	<div class="sliceTop"></div>
 	
-	<p>Welcome to the registration to Hackazon ("us", "we") website and its related services. You may access many areas of our website without registering your details with us.  Certain areas are only open to you if you register.  The terms and conditions which govern material submitted by you to us and your use of the Hackazon website (including all 'Hackazon' branded microsites and any email bulletins) are governed by our general "Terms and Conditions of Reading".  These Terms and Conditions of Registration are in addition to the general Terms and Conditions of Reading. </p>  
+	<p>Welcome to the registration to ShoppingStreet ("us", "we") website and its related services. You may access many areas of our website without registering your details with us.  Certain areas are only open to you if you register.  The terms and conditions which govern material submitted by you to us and your use of the ShoppingStreet  website (including all 'ShoppingStreet' branded microsites and any email bulletins) are governed by our general "Terms and Conditions of Reading".  These Terms and Conditions of Registration are in addition to the general Terms and Conditions of Reading. </p>  
 	<ul>
 		<li><span class="index">1.</span> Registration
 			<ul>
-				<li><span class="index">1.1</span> By registering here and creating your "Hackazon Profile", you can access different services that are offered by us without having to register for each service separately. If a service you wish to subscribe to has additional terms and conditions, you will be asked to accept these separately. </li> 
+				<li><span class="index">1.1</span> By registering here and creating your "ShoppingStreet Profile", you can access different services that are offered by us without having to register for each service separately. If a service you wish to subscribe to has additional terms and conditions, you will be asked to accept these separately. </li> 
 				<li><span class="index">1.2</span> You agree that:
 					<ul>
 						<li>
@@ -36,13 +36,13 @@
 		<li><span class="index">2.</span> Term
 			<ul>
 				<li><span class="index">2.1</span>	If you breach these or any of our other terms and conditions we reserve the right to close your account, if we do so, we may close all accounts you have open in your name.</li>
-				<li><span class="index">2.2</span>	To deactivate your account please contact our customer services department; their details can be found under "contact us" on your Hackazon Profile page. </li>
+				<li><span class="index">2.2</span>	To deactivate your account please contact our customer services department; their details can be found under "contact us" on your ShoppingStreet Profile page. </li>
 			</ul>
 		</li> 
 		<li><span class="index">3.</span> Administration
 			<ul>
 				<li>
-					<span class="index">3.1</span> You can update your personal details (including your account and marketing preferences) by accessing your account at your Hackazon Profile page and making any necessary changes; this will update your details across all services that you have subscribed to. 
+					<span class="index">3.1</span> You can update your personal details (including your account and marketing preferences) by accessing your account at your ShoppingStreet Profile page and making any necessary changes; this will update your details across all services that you have subscribed to. 
 				</li>
 			</ul>
 		</li> 

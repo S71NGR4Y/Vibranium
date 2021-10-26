@@ -143,7 +143,7 @@ class User extends Page
                     $this->pixie->email->send(
                         $emailData['to'],
                         $emailData['from'],
-                        'You have successfully registered on hackazon.com',
+                        'You have successfully registered on ShoppingStreet.com',
                         $emailView->render()
                     );
 

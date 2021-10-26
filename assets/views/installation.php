@@ -2,7 +2,7 @@
 <div id="container" class="installation">
     <div class="container">
         <div class="row">
-            <h1 class="text-center">Hackazon Installation Wizard</h1>
+            <h1 class="text-center">ShoppingStreet Installation Wizard</h1>
         </div>
     </div>
     <?php if (isset($steps)): ?>
