@@ -12,7 +12,7 @@
         };
         var params = {};
         params.quality = "high";
-        params.bgcolor = "#ffffff";
+        params.bgcolor = "#FFFF99";
         params.allowscriptaccess = "always";
         params.allowfullscreen = "true";
         var attributes = {};

@@ -49,7 +49,7 @@ build: 56
     -webkit-border-radius: 16px;
     border-radius: 16px;
     margin-bottom: 20px;
-    background-color: #FFFFFF;
+    background-color: #FFFF99;
     border: 1px solid #dfdfdf;
     padding: 40px 50px;
 }
@@ -131,7 +131,7 @@ build: 56
 }
 .sf-button:hover .btn-bg,
 .sf-button-selected .btn-bg {
-    color: #FFFFFF;
+    color: #FFFF99;
     text-shadow:0 1px 1px #6b9311;
     background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAcCAIAAAAvP0KbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEFJREFUeNpiPnv2LNMdvlymf///M/37B8R/QfQ/MP33L4j+B6Qh7L9//sHpf2h8MA1V+w/KRjYLaDaLCU8vQIABAFO3TxZriO4yAAAAAElFTkSuQmCC) repeat-x top left;
 }

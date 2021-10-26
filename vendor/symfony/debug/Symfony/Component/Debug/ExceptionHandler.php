@@ -293,7 +293,7 @@ EOF;
             .sf-reset .exception_title { margin-left: 3em; margin-bottom: 0.7em; display: block; }
             .sf-reset .exception_message { margin-left: 3em; display: block; }
             .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
-            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+            .sf-reset .block { background-color:#FFFF99; padding:10px 28px; margin-bottom:20px;
                 -webkit-border-bottom-right-radius: 16px;
                 -webkit-border-bottom-left-radius: 16px;
                 -moz-border-radius-bottomright: 16px;
@@ -320,7 +320,7 @@ EOF;
             .sf-reset a { background:none; color:#868686; text-decoration:none; }
             .sf-reset a:hover { background:none; color:#313131; text-decoration:underline; }
             .sf-reset ol { padding: 10px 0; }
-            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+            .sf-reset h1 { background-color:#FFFF99; padding: 15px 28px; margin-bottom: 20px;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
                 border-radius: 10px;

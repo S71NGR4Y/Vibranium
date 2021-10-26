@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
     margin-right: -10px;
 }
 .dropdown-submenu:hover > a:after {
-    border-left-color: #ffffff;
+    border-left-color: #FFFF99;
 }
 .dropdown-submenu.pull-left {
     float: none;
@@ -490,7 +490,7 @@ ul.nav li.grey a {
     padding: 10px;
 }
 .well.well-small ul.nav-list {
-    background-color: #ffffff;
+    background-color: #FFFF99;
     border-radius: 2px;
     padding: 14px;
 }

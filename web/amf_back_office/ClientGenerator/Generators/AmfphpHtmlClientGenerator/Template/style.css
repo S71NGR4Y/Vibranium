@@ -117,7 +117,7 @@ input, #result, button{
 input[type="submit"], button {
     padding: 5px;
     margin: 5px;
-    background: #FFFFFF;
+    background: #FFFF99;
 }
 
 #serviceMethods{

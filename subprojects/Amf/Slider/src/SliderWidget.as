@@ -13,7 +13,7 @@ import org.silexlabs.amfphp.clientgenerator.generated.service.SliderServiceClien
 /**
  * Main class for banner
  */
-[SWF(pageTitle="Slider", width=360, height=290, backgroundColor="#ffffff", frameRate=60)]
+[SWF(pageTitle="Slider", width=360, height=290, backgroundColor="#FFFF99", frameRate=60)]
 public class SliderWidget extends Sprite {
     protected var _slider:Slider;
     protected var _config:Object = {

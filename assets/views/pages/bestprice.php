@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-lg-12">
 			<h1>Get the best price</h1>
@@ -8,7 +8,7 @@
                 <li class="active">Get the best price</li>
             </ol>
         </div>
-    </div>
+    </div> -->
 
     <div class="section">
         <form role="form" method="post" action="/bestprice" id="bestpriceForm">

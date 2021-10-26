@@ -13,7 +13,7 @@ import org.silexlabs.amfphp.clientgenerator.NetConnectionSingleton;
 import org.silexlabs.amfphp.clientgenerator.ObjectUtil;
 import org.silexlabs.amfphp.clientgenerator.generated.service.CouponServiceClient;
 
-[SWF(pageTitle="Coupon", width=0, height=0, backgroundColor="#ffffff", frameRate=10)]
+[SWF(pageTitle="Coupon", width=0, height=0, backgroundColor="#FFFF99", frameRate=10)]
 public class CouponWidget extends Sprite {
     private var _service:CouponServiceClient;
     private var _host:String = 'http://hackazon.webscantest.com';

@@ -82,7 +82,7 @@ public class ProductsListAdapter extends OkHttpSpiceArrayAdapter<Product> {
 
         ViewMetaData viewMetaData = (ViewMetaData) convertView.getTag();
 
-        viewMetaData.image.setImageDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
+        viewMetaData.image.setImageDrawable(new ColorDrawable(Color.parseColor("#FFFF99")));
         viewMetaData.imageState = ImageState.EMPTY;
 
         if (viewMetaData.pendingRequest != null) {

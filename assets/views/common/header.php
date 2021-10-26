@@ -9,7 +9,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand hw-navbar-brand" href="/"><!--span>Shopping Street <em>Webscantest</em></span--><img src="/images/Hackazon.png"></a>
+                <a class="navbar-brand hw-navbar-brand" href="/"><!--span>Shopping Street <em>Webscantest</em></span--><img src="/images/applogo.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse hw-navbar-collapse navbar-collapse navbar-ex1-collapse" id="hw-navbar">

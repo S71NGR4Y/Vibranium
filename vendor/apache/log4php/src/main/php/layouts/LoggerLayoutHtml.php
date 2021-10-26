@@ -178,11 +178,11 @@ class LoggerLayoutHtml extends LoggerLayout {
 		$sbuf .= "<style type=\"text/css\">" . PHP_EOL;
 		$sbuf .= "<!--" . PHP_EOL;
 		$sbuf .= "body, table {font-family: arial,sans-serif; font-size: x-small;}" . PHP_EOL;
-		$sbuf .= "th {background: #336699; color: #FFFFFF; text-align: left;}" . PHP_EOL;
+		$sbuf .= "th {background: #336699; color: #FFFF99; text-align: left;}" . PHP_EOL;
 		$sbuf .= "-->" . PHP_EOL;
 		$sbuf .= "</style>" . PHP_EOL;
 		$sbuf .= "</head>" . PHP_EOL;
-		$sbuf .= "<body bgcolor=\"#FFFFFF\" topmargin=\"6\" leftmargin=\"6\">" . PHP_EOL;
+		$sbuf .= "<body bgcolor=\"#FFFF99\" topmargin=\"6\" leftmargin=\"6\">" . PHP_EOL;
 		$sbuf .= "<hr size=\"1\" noshade>" . PHP_EOL;
 		$sbuf .= "Log session start time " . strftime('%c', time()) . "<br>" . PHP_EOL;
 		$sbuf .= "<br>" . PHP_EOL;
