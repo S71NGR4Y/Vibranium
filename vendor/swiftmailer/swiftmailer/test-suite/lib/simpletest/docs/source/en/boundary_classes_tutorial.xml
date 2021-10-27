@@ -345,7 +345,7 @@ class TestOfLogging extends UnitTestCase {
                 just run the tests for your boundary classes.
                 For this reason, this test suite is often called the
                 &quot;setup tests&quot;.
-                Hand them to your system administrator, and they can set up
+                Hand them to your system atomistrator, and they can set up
                 your server for you.
             </p>
             <p>

@@ -12,7 +12,7 @@ namespace App\Installation\Step;
 
 class AdminCredentialsStep extends AbstractStep
 {
-    protected $template = 'installation/admin_credentials';
+    protected $template = 'installation/atom_credentials';
 
     protected $password;
 

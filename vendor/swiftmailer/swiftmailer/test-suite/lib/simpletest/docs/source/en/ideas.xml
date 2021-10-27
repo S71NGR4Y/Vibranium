@@ -76,7 +76,7 @@
                     codes that reflect how the site handled a combination of well-formed
                     and malformed input. This would have the potential to completely wreck
                     some websites, but would be great for testing the robustness and edge
-                    case behavior of CMS's and other online administration tools.
+                    case behavior of CMS's and other online atomistration tools.
                 </dd>
             </dl>
         </section>

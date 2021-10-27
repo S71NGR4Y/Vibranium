@@ -31,7 +31,7 @@ class Category extends CRUDController
                 ],
                 'parentCategory.name' => [
                     'is_link' => true,
-                    'template' => '/admin/category/%parentCategory.categoryID%',
+                    'template' => '/atom/category/%parentCategory.categoryID%',
                     'title' => 'Parent'
                 ],
                 'enabled' => [

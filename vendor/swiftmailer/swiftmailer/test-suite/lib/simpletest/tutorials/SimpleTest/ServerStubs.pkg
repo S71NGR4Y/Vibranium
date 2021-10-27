@@ -143,7 +143,7 @@ Stub::generate('Configuration');
 
 $config = &amp;new StubConfiguration();
 $config-&gt;setReturnValue('getValue', 'primary', array('db_host'));
-$config-&gt;setReturnValue('getValue', 'admin', array('db_user'));
+$config-&gt;setReturnValue('getValue', 'atom', array('db_user'));
 $config-&gt;setReturnValue('getValue', 'secret', array('db_password'));
 </programlisting>
                 The extra parameter is a list of arguments to attempt
@@ -156,7 +156,7 @@ $config-&gt;setReturnValue('getValue', 'secret', array('db_password'));
 <programlisting role="php">
 $config-&gt;getValue('db_user');
 </programlisting>
-                ...it will return "admin".
+                ...it will return "atom".
                 It finds this by attempting to match the calling arguments
                 to its list of returns one after another until
                 a complete match is found.

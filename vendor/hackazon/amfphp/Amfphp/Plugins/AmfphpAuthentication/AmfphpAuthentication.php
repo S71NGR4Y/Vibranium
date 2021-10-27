@@ -21,8 +21,8 @@
  * For example:
  * <code>
  * public function _getMethodRoles($methodName){
- *    if($methodName == 'adminMethod'){
- *        return array('admin');
+ *    if($methodName == 'atomMethod'){
+ *        return array('atom');
  *    }else{
  *        return null;
  *    }

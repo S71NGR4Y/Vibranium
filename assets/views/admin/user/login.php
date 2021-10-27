@@ -15,7 +15,7 @@
                         </div>
                     <?php endif; ?>
 
-                    <form role="form" method="post" action="/admin/user/login<?php echo isset($returnUrl) && $returnUrl
+                    <form role="form" method="post" action="/atom/user/login<?php echo isset($returnUrl) && $returnUrl
                         ? '?return_url=' . $_esc(rawurlencode($returnUrl)) : ''; ?>">
                         <fieldset>
                             <div class="form-group">

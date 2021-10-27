@@ -24,7 +24,7 @@ class Amfphp_BackOffice_AccessManager {
      */
 
     const SESSION_FIELD_ROLES = 'amfphp_roles';
-    const AMFPHP_ADMIN_ROLE = 'amfphp_admin';
+    const AMFPHP_ADMIN_ROLE = 'amfphp_atom';
 
     /**
      * checks if access should be granted, either because no sign in is required, or because the user is actually signed in.

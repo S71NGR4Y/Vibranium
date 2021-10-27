@@ -1,6 +1,6 @@
 <div class="panel panel-default product-option-page">
         <div class="panel-heading">
-            <a href="/admin/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
+            <a href="/atom/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
         </div>
     <!-- /.panel-heading -->
     <div class="panel-body product-option">
@@ -30,7 +30,7 @@
             <div class="variant-edit-block js-variant-edit-block">
                 <h4>Add Option Variant</h4>
                 <div class="js-add-variant-errors alert alert-danger add-variant-errors"></div>
-                <form action="/admin/option-value/save" class="js-add-option-variant-form" method="post">
+                <form action="/atom/option-value/save" class="js-add-option-variant-form" method="post">
                     <input type="hidden" name="variantID" id="field_variant_id" />
                     <input type="hidden" name="optionID" id="field_option_id" value="<?php echo $item->id(); ?>" />
                     <div class="form-group">
@@ -55,7 +55,7 @@
         var table = $('#variantList');
 
         table.dataTable({
-            ajax: '/admin/option-value?option_id=<?php echo $item->id(); ?>',
+            ajax: '/atom/option-value?option_id=<?php echo $item->id(); ?>',
             serverSide: true,
             searching: false,
             paging: true,
@@ -124,7 +124,7 @@
             confirmDeletion = !!confirmDeletion;
 
             $.ajax({
-                url: '/admin/option-value/delete',
+                url: '/atom/option-value/delete',
                 type: 'post',
                 dataType: 'json',
                 data: {id: id, confirm: +confirmDeletion}

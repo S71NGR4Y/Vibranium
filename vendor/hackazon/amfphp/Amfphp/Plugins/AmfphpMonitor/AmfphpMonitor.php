@@ -68,7 +68,7 @@ class AmfphpMonitor {
     protected static $times;
 
     /**
-     * restrict access to amfphp_admin, the role set when using the back office. default is true. 
+     * restrict access to amfphp_atom, the role set when using the back office. default is true. 
      * @var boolean
      */
     protected $restrictAccess = true;

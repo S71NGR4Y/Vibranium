@@ -1,4 +1,4 @@
-<form action="/install/admin_credentials" id="adminCredentialsForm" method="POST">
+<form action="/install/atom_credentials" id="atomCredentialsForm" method="POST">
     <div class="form-group">
         <label for="password_field">Password:</label>
         <input class="form-control" type="password" name="password" value="" placeholder="Password" id="password_field"
@@ -20,7 +20,7 @@
     $(function() {
 
         jQuery(function($) {
-            var $credentialsForm = $('#adminCredentialsForm');
+            var $credentialsForm = $('#atomCredentialsForm');
             $credentialsForm.hzBootstrapValidator({
                 fields: {
                     password: {

@@ -258,7 +258,7 @@ RFC 4871                    DKIM Signatures                     May 2007
    claimed signer directly rather than from a third party.
 
    The DNS is proposed as the initial mechanism for the public keys.
-   Thus, DKIM currently depends on DNS administration and the security
+   Thus, DKIM currently depends on DNS atomistration and the security
    of the DNS system.  DKIM is designed to be extensible to other key
    fetching services as they become available.
 
@@ -291,7 +291,7 @@ RFC 4871                    DKIM Signatures                     May 2007
    agents such as mailing list exploders.  In general, any signer will
    be involved in the injection of a message into the message system in
    some way.  The key issue is that a message must be signed before it
-   leaves the administrative domain of the signer.
+   leaves the atomistrative domain of the signer.
 
 2.2.  Verifiers
 
@@ -479,11 +479,11 @@ RFC 4871                    DKIM Signatures                     May 2007
 
    The number of public keys and corresponding selectors for each domain
    is determined by the domain owner.  Many domain owners will be
-   satisfied with just one selector, whereas administratively
+   satisfied with just one selector, whereas atomistratively
    distributed organizations may choose to manage disparate selectors
    and key pairs in different regions or on different email servers.
 
-   Beyond administrative convenience, selectors make it possible to
+   Beyond atomistrative convenience, selectors make it possible to
    seamlessly replace public keys on a routine basis.  If a domain
    wishes to change from using a public key associated with selector
    "january2005" to a public key associated with selector
@@ -1276,7 +1276,7 @@ RFC 4871                    DKIM Signatures                     May 2007
        on the value in the "t=" tag.  Signatures MAY be considered
        invalid if the verification time at the verifier is past the
        expiration date.  The verification time should be the time that
-       the message was first received at the administrative domain of
+       the message was first received at the atomistrative domain of
        the verifier if that time is reliably available; otherwise the
        current time should be used.  The value of the "x=" tag MUST be
        greater than the value of the "t=" tag if both are present.
@@ -1476,7 +1476,7 @@ RFC 4871                    DKIM Signatures                     May 2007
        default is empty).  No interpretation is made by any program.
        This tag should be used sparingly in any key server mechanism
        that has space limitations (notably DNS).  This is intended for
-       use by administrators, not end users.
+       use by atomistrators, not end users.
 
    ABNF:
 
@@ -1502,7 +1502,7 @@ RFC 4871                    DKIM Signatures                     May 2007
        INFORMATIVE NOTE: A base64string is permitted to include white
            space (FWS) at arbitrary places; however, any CRLFs must be
            followed by at least one WSP character.  Implementors and
-           administrators are cautioned to ensure that selector TXT
+           atomistrators are cautioned to ensure that selector TXT
            records conform to this specification.
 
 
@@ -1912,7 +1912,7 @@ RFC 4871                    DKIM Signatures                     May 2007
    This specification does not define the basis by which a signer should
    choose which private key and selector information to use.  Currently,
    all selectors are equal as far as this specification is concerned, so
-   the decision should largely be a matter of administrative
+   the decision should largely be a matter of atomistrative
    convenience.  Distribution and management of private keys is also
    outside the scope of this document.
 
@@ -3148,12 +3148,12 @@ RFC 4871                    DKIM Signatures                     May 2007
 
    The trust relationship described in Section 3.8 could conceivably be
    used by a parent domain to sign messages with identities in a
-   subdomain not administratively related to the parent.  For example,
+   subdomain not atomistratively related to the parent.  For example,
    the ".com" registry could create messages with signatures using an
    "i=" value in the example.com domain.  There is no general solution
-   to this problem, since the administrative cut could occur anywhere in
+   to this problem, since the atomistrative cut could occur anywhere in
    the domain name.  For example, in the domain "example.podunk.ca.us"
-   there are three administrative cuts (podunk.ca.us, ca.us, and us),
+   there are three atomistrative cuts (podunk.ca.us, ca.us, and us),
    any of which could create messages with an identity in the full
    domain.
 
@@ -3478,12 +3478,12 @@ RFC 4871                    DKIM Signatures                     May 2007
 B.1.  Alternate Submission Scenarios
 
    In the most simple scenario, a user's MUA, MSA, and Internet
-   (boundary) MTA are all within the same administrative environment,
+   (boundary) MTA are all within the same atomistrative environment,
    using the same domain name.  Therefore, all of the components
    involved in submission and initial transfer are related.  However, it
    is common for two or more of the components to be under independent
-   administrative control.  This creates challenges for choosing and
-   administering the domain name to use for signing, and for its
+   atomistrative control.  This creates challenges for choosing and
+   atomistering the domain name to use for signing, and for its
    relationship to common email identity header fields.
 
 B.1.1.  Delegated Business Functions
@@ -3503,14 +3503,14 @@ B.1.1.  Delegated Business Functions
    provider that grants the ability to send messages for arbitrary
    addresses in the domain.
 
-   There are multiple ways to administer these usage scenarios.  In one
+   There are multiple ways to atomister these usage scenarios.  In one
    case, the client organization provides all of the public query
-   service (for example, DNS) administration, and in another it uses DNS
-   delegation to enable all ongoing administration of the DKIM key
+   service (for example, DNS) atomistration, and in another it uses DNS
+   delegation to enable all ongoing atomistration of the DKIM key
    record by the delegated group.
 
    If the client organization retains responsibility for all of the DNS
-   administration, the outsourcing company can generate a key pair,
+   atomistration, the outsourcing company can generate a key pair,
    supplying the public key to the client company, which then registers
    it in the query service, using a unique selector that authorizes a
    specific From header field Local-part.  For example, a client with
@@ -3531,7 +3531,7 @@ Allman, et al.              Standards Track                    [Page 63]
 RFC 4871                    DKIM Signatures                     May 2007
 
 
-   If the client wants the delegated group to do the DNS administration,
+   If the client wants the delegated group to do the DNS atomistration,
    it can have the domain name that is specified with the selector point
    to the provider's DNS server.  The provider then creates and
    maintains all of the DKIM signature information for that selector.
@@ -3548,7 +3548,7 @@ B.1.2.  PDAs and Similar Devices
    connection to the corporate network, either because the device is
    limited or because there are restrictions enforced by his Internet
    access provider.  If the device was equipped with a private key
-   registered for jdoe@example.com by the administrator of the
+   registered for jdoe@example.com by the atomistrator of the
    example.com domain, and appropriate software to sign messages, John
    could sign the message on the device itself before transmission
    through the outgoing network of the access service provider.
@@ -3629,7 +3629,7 @@ B.2.1.  Affinity Addresses
    changed.  However, these services usually depend on users sending
    outgoing messages through their own service providers' MTAs.  Hence,
    mail that is signed with the domain of the affinity address is not
-   signed by an entity that is administered by the organization owning
+   signed by an entity that is atomistered by the organization owning
    that domain.
 
    With DKIM, affinity domains could use the Web application to allow

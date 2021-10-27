@@ -156,7 +156,7 @@ class FieldFormatter
             $enctype = 'multipart/form-data';
         }
         $operation = $this->item->id() ? '/edit/'.$this->item->id() : '/new';
-        echo '<form method="post" action="/admin/'.strtolower($this->controllerAlias).$operation.'" '
+        echo '<form method="post" action="/atom/'.strtolower($this->controllerAlias).$operation.'" '
                 . 'enctype="'.$enctype.'" '
                 . ' class="model-form model-'.$this->item->model_name.'-form">';
     }
@@ -193,9 +193,9 @@ class FieldFormatter
     {
         if ($this->item->id()) {
             echo '<a class="btn btn-primary" '
-                .'href="/admin/'.$this->controllerAlias.'/new/">Add new</a> ';
+                .'href="/atom/'.$this->controllerAlias.'/new/">Add new</a> ';
             echo '<a class="btn btn-danger js-delete-item" '
-                .'href="/admin/'.$this->controllerAlias.'/delete/'.$this->item->id().'">Delete</a> ';
+                .'href="/atom/'.$this->controllerAlias.'/delete/'.$this->item->id().'">Delete</a> ';
         }
 
         $name = $this->item->id() ? 'Save' : 'Add';

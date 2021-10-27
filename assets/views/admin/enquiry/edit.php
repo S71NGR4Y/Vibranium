@@ -1,6 +1,6 @@
 <div class="panel panel-default enquiry-page">
         <div class="panel-heading">
-            <a href="/admin/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
+            <a href="/atom/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
         </div>
     <!-- /.panel-heading -->
     <div class="panel-body helpdesk">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div aria-hidden="true" style="display: none;" class="gwt-HTML errors alert alert-danger js-add-enquiry-message-errors"></div>
-                <form action="/admin/enquiry/<?php echo $item->id(); ?>/add-message" method="POST" class="js-add-enquiry-message-form">
+                <form action="/atom/enquiry/<?php echo $item->id(); ?>/add-message" method="POST" class="js-add-enquiry-message-form">
                     <table class="add-message-form" cellpadding="0" cellspacing="0">
                         <tbody>
                         <tr>

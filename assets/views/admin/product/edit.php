@@ -1,6 +1,6 @@
 <div class="panel panel-default">
         <div class="panel-heading">
-            <a href="/admin/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
+            <a href="/atom/<?php $_(strtolower($modelName)); ?>">&larr; Return to list</a>
         </div>
     <!-- /.panel-heading -->
     <div class="panel-body">
@@ -32,7 +32,7 @@
             <div class="variant-edit-block js-variant-edit-block">
                 <h4>Add Option</h4>
                 <div class="js-add-variant-errors alert alert-danger add-variant-errors"></div>
-                <form action="/admin/product-option-value/save" class="js-add-option-variant-form" method="post">
+                <form action="/atom/product-option-value/save" class="js-add-option-variant-form" method="post">
                     <input type="hidden" name="ID" id="field_id" />
                     <input type="hidden" name="productID" id="field_product_id" value="<?php echo $item->id(); ?>" />
                     <?php $fieldFormatter->renderField('optionID'); ?>
@@ -57,7 +57,7 @@
         var table = $('#variantList');
 
         table.dataTable({
-            ajax: '/admin/product-option-value?product_id=<?php echo $item->id(); ?>',
+            ajax: '/atom/product-option-value?product_id=<?php echo $item->id(); ?>',
             serverSide: true,
             searching: false,
             paging: true,
@@ -135,7 +135,7 @@
             confirmDeletion = !!confirmDeletion;
 
             $.ajax({
-                url: '/admin/product-option-value/delete',
+                url: '/atom/product-option-value/delete',
                 type: 'post',
                 dataType: 'json',
                 data: {id: id, confirm: +confirmDeletion}
@@ -158,7 +158,7 @@
             varToSelectId = varToSelectId || null;
 
             $.ajax({
-                url: '/admin/option-value/get-option-values',
+                url: '/atom/option-value/get-option-values',
                 type: 'post',
                 dataType: 'json',
                 data: {option_id: optionId},

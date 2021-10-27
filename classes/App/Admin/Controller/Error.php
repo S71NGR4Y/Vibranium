@@ -25,7 +25,7 @@ class Error extends Controller
         header($this->request->server("SERVER_PROTOCOL").' '.$status);
         header("Status: {$status}");
 
-        $this->view->set_template('admin/error/view');
+        $this->view->set_template('atom/error/view');
         $this->view->pageHeader = 'Error';
         $this->view->exception = $exception;
         $this->view->pageTitle = 'Error: ' . $exception->getCode() . ' ' . $exception->getMessage();

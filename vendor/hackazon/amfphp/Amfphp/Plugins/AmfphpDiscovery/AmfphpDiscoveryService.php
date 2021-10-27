@@ -37,7 +37,7 @@ class AmfphpDiscoveryService {
     public static $serviceNames2ClassFindInfo;
 
     /**
-     * restrict access to amfphp_admin. 
+     * restrict access to amfphp_atom. 
      * @var boolean
      */
     public static $restrictAccess;
@@ -49,7 +49,7 @@ class AmfphpDiscoveryService {
      */
     public function _getMethodRoles($methodName) {
         if (self::$restrictAccess) {
-            return array('amfphp_admin');
+            return array('amfphp_atom');
         }
     }
 

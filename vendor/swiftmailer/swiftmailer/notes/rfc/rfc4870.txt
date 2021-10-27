@@ -238,7 +238,7 @@ RFC 4870                       DomainKeys                       May 2007
 
    For practical reasons, it is expected that initial implementations of
    DomainKeys will be deployed on Mail Transfer Agents (MTAs) that
-   accept or relay email across administrative or organizational
+   accept or relay email across atomistrative or organizational
    boundaries.  There are numerous advantages to deployment at the
    border MTA, including:
 
@@ -565,11 +565,11 @@ RFC 4870                       DomainKeys                       May 2007
 
    The number of public keys and corresponding selectors for each domain
    is determined by the domain owner.  Many domain owners will be
-   satisfied with just one selector, whereas administratively
+   satisfied with just one selector, whereas atomistratively
    distributed organizations may choose to manage disparate selectors
    and key pairs in different regions, or on different email servers.
 
-   Beyond administrative convenience, selectors make it possible to
+   Beyond atomistrative convenience, selectors make it possible to
    seamlessly replace public keys on a routine basis.  If a domain
    wishes to change from using a public key associated with selector
    "2005" to a public key associated with selector "2006", it merely
@@ -1152,7 +1152,7 @@ RFC 4870                       DomainKeys                       May 2007
    This specification does not define the basis by which a signer should
    choose which private key and selector information to use.  Currently,
    all selectors are equal as far as this specification is concerned, so
-   the decision should largely be a matter of administrative
+   the decision should largely be a matter of atomistrative
    convenience.
 
 3.5.4.  Calculating the Signature Value
@@ -1764,8 +1764,8 @@ RFC 4870                       DomainKeys                       May 2007
 6.1.  The Benefits of Selectors
 
    Selectors are at the heart of the flexibility of DomainKeys.  A
-   domain administrator is free to use a single DomainKey for all
-   outbound mail.  Alternatively, the domain administrator may use many
+   domain atomistrator is free to use a single DomainKey for all
+   outbound mail.  Alternatively, the domain atomistrator may use many
    DomainKeys differentiated by selector and assign each key to
    different servers.
 
@@ -1773,7 +1773,7 @@ RFC 4870                       DomainKeys                       May 2007
    DomainKey for each server, and thus their DNS will advertise
    potentially hundreds of keys via their unique selectors.
 
-   Another example is a corporate email administrator who might generate
+   Another example is a corporate email atomistrator who might generate
    a separate DomainKey for each regional office email server.
 
    In essence, selectors allow a domain owner to distribute authority to

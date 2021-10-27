@@ -1,6 +1,6 @@
 <?php
 /** @var \App\Model\EnquiryMessage $eMessage */
-$authorIsAdmin = $eMessage->author->hasRole('admin');
+$authorIsAdmin = $eMessage->author->hasRole('atom');
 ?>
 <li class="<?php echo $authorIsAdmin ? 'right' : 'left'; ?> clearfix">
     <span class="chat-img pull-<?php echo $authorIsAdmin ? 'right' : 'left'; ?>">

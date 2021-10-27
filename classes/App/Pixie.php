@@ -210,10 +210,10 @@ class Pixie extends \PHPixie\Pixie {
                 $isAdmin = $exception instanceof HttpException
                     && $exception->getParameter('request')
                     && $exception->getParameter('request')->isAdminPath()
-                    && $this->auth->has_role('admin');
+                    && $this->auth->has_role('atom');
 
                 if ($isAdmin) {
-                    $route_data = $this->router->match('/admin/error/' . $exception->getCode());
+                    $route_data = $this->router->match('/atom/error/' . $exception->getCode());
                 } else {
                     $route_data = $this->router->match('/error/' . $exception->getCode());
                 }

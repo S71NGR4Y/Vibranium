@@ -13,7 +13,7 @@ namespace App\Exception;
 class HttpException extends \Exception
 {
     const ORIGIN_PUBLIC = 'public';
-    const ORIGIN_ADMIN = 'admin';
+    const ORIGIN_ADMIN = 'atom';
 
     protected $statusMessage = 'Bad Request';
 
