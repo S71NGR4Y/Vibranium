@@ -54,7 +54,7 @@ class User extends CRUDController
 
                 if ($logged){
 
-                    if ($this->pixie->auth->has_role('atom')) {
+                    if ($this->pixie->auth->has_role('admin')) {
                         $user->last_login = date('Y-m-d H:i:s');
                         $user->save();
 

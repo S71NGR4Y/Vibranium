@@ -37,7 +37,7 @@ class EventListeners
             throw new UnauthorizedException();
         }
 
-        if (!$pixie->auth->has_role('atom')) {
+        if (!$pixie->auth->has_role('admin')) {
             throw new ForbiddenException();
         }
     }
