@@ -121,12 +121,12 @@ if ($config->fetchAmfphpUpdates) {
                                         </td>
                                     </tr>
                                 </table>
-                                <div id="amfCallerContainer">
+                                <!-- <div id="amfCallerContainer">
                                     Flash Player is needed to make AMF calls. 
                                     <a target="_blank" href="http://www.adobe.com/go/getflashplayer">
                                         <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
                                     </a>
-                                </div>                                                            
+                                </div>                                                             -->
                             </div>
 
                             <h3>4. View the server's answer.</h3>
