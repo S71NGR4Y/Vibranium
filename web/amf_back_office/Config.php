@@ -59,7 +59,7 @@ class Amfphp_BackOffice_Config {
         $this->amfphpEntryPointPath = 'http://' . ($_SERVER['HTTP_HOST'] ?: 'hackazon.webscantest.com' ) . '/amf';
         $this->backOfficeCredentials = array();
         //example code for username + password:
-        $this->backOfficeCredentials['atom'] = 'atom';
+        $this->backOfficeCredentials['admin'] = 'admin';
         //$this->backOfficeCredentials['a'] = 'a';
         $extraConfigPath = dirname(__FILE__) . '/extraConfig.php';
         if(file_exists($extraConfigPath)){

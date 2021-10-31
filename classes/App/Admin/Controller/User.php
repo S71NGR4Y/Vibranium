@@ -31,8 +31,8 @@ class User extends CRUDController
     {
         $this->view = $this->view('user/login');
 
-        if (!is_null($this->pixie->auth->user()) && $this->pixie->auth->has_role('atom')) {
-            $this->redirect('/atom/');
+        if (!is_null($this->pixie->auth->user()) && $this->pixie->auth->has_role('admin')) {
+            $this->redirect('/admin/');
         }
 
         $returnUrl =  $this->request->get('return_url', '');
@@ -65,12 +65,12 @@ class User extends CRUDController
                             return;
                         }
 
-                        $this->redirect($returnUrl ?: '/atom/');
+                        $this->redirect($returnUrl ?: '/admin/');
                         return;
 
                     } else {
-                        $this->pixie->session->flash('error', 'You don\'t have enough permissions to access atom area.');
-                        $this->redirect('/atom/user/login' . ($returnUrl ? '?return_url=' . rawurlencode($returnUrl) : ''));
+                        $this->pixie->session->flash('error', 'You don\'t have enough permissions to access admin area.');
+                        $this->redirect('/admin/user/login' . ($returnUrl ? '?return_url=' . rawurlencode($returnUrl) : ''));
                         return;
                     }
                 }
@@ -87,7 +87,7 @@ class User extends CRUDController
 
     public function action_logout() {
         $this->pixie->auth->logout();
-        $this->redirect('/atom/user/login');
+        $this->redirect('/admin/user/login');
     }
 
     public function action_edit()
@@ -123,7 +123,7 @@ class User extends CRUDController
             }
 
             if ($user->loaded()) {
-                $this->redirect('/atom/' . strtolower($user->model_name) . '/edit/'.$user->id());
+                $this->redirect('/admin/' . strtolower($user->model_name) . '/edit/'.$user->id());
                 return;
             }
 
@@ -178,7 +178,7 @@ class User extends CRUDController
                     }
                 }
 
-                $this->redirect('/atom/' . strtolower($user->model_name) . '/edit/'.$user->id());
+                $this->redirect('/admin/' . strtolower($user->model_name) . '/edit/'.$user->id());
                 return;
             }
         } else {

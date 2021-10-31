@@ -143,7 +143,7 @@ class CRUDController extends Controller
 
             if ($item->loaded()) {
                 $this->onSuccessfulEdit($item);
-                $this->redirect('/atom/' . strtolower($this->alias) . '/edit/'.$item->id());
+                $this->redirect('/admin/' . strtolower($this->alias) . '/edit/'.$item->id());
                 return;
             }
 
@@ -185,7 +185,7 @@ class CRUDController extends Controller
             $item->save();
 
             if ($item->loaded()) {
-                $this->redirect('/atom/' . strtolower($this->alias) . '/edit/'.$item->id());
+                $this->redirect('/admin/' . strtolower($this->alias) . '/edit/'.$item->id());
                 return;
             }
         }
@@ -229,7 +229,7 @@ class CRUDController extends Controller
             throw new \LogicException($event->getReason());
         }
 
-        $location = '/atom/'.strtolower($this->model->model_name);
+        $location = '/admin/'.strtolower($this->model->model_name);
 
         if ($this->request->is_ajax()) {
             $this->jsonResponse(['success' => 1, 'location' => $location]);
@@ -287,7 +287,7 @@ class CRUDController extends Controller
             if ($data['type'] == 'link' || $data['is_link']) {
                 $data['is_link'] = true;
                 if (!$data['template']) {
-                    $data['template'] = '/atom/' . $this->alias . '/edit/%' . $this->model->id_field . '%';
+                    $data['template'] = '/admin/' . $this->alias . '/edit/%' . $this->model->id_field . '%';
                 }
             }
 
@@ -335,7 +335,7 @@ class CRUDController extends Controller
         if (array_key_exists($this->model->id_field, $listFields)) {
             if (!array_key_exists('type', $listFields[$this->model->id_field])) {
                 $listFields[$this->model->id_field]['type'] = 'link';
-                $listFields[$this->model->id_field]['template'] = '/atom/' . $this->alias . '/edit/%' . $this->model->id_field . '%';
+                $listFields[$this->model->id_field]['template'] = '/admin/' . $this->alias . '/edit/%' . $this->model->id_field . '%';
             }
             $listFields[$this->model->id_field]['width'] = '60';
         }
@@ -585,7 +585,7 @@ class CRUDController extends Controller
             'edit' => [
                 'extra' => true,
                 'type' => 'html',
-                'template' => '<a href="/atom/'.strtolower($this->alias).'/edit/%'.$this->model->id_field.'%" '
+                'template' => '<a href="/admin/'.strtolower($this->alias).'/edit/%'.$this->model->id_field.'%" '
                     . ' class="js-edit-item">Edit</a>',
                 'column_classes' => 'edit-action-column'
             ]
@@ -597,7 +597,7 @@ class CRUDController extends Controller
             'delete' => [
                 'extra' => true,
                 'type' => 'html',
-                'template' => '<a href="/atom/'.strtolower($this->alias).'/delete/%'.$this->model->id_field.'%" '
+                'template' => '<a href="/admin/'.strtolower($this->alias).'/delete/%'.$this->model->id_field.'%" '
                     . ' class="js-delete-item">Delete</a>',
                 'column_classes' => 'delete-action-column'
             ],

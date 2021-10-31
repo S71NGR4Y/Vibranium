@@ -252,7 +252,7 @@ RFC 2554                  SMTP Authentication                 March 1999
 
        A server MAY treat expansion of a mailing list as a new
        submission, setting the AUTH parameter to the mailing list
-       address or mailing list atomistration address when relaying the
+       address or mailing list administration address when relaying the
        message to list subscribers.
 
        It is conforming for an implementation to be hard-coded to treat

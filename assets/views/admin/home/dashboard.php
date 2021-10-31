@@ -90,7 +90,7 @@
                 </div>
                 <a href="#">
                     <div class="panel-footer">
-                        <a href="/atom/enquiry">
+                        <a href="/admin/enquiry">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                             <div class="clearfix"></div>

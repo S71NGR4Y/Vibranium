@@ -25,7 +25,7 @@ class AmfphpMonitorService {
 
 
     /**
-     * restrict access to amfphp_atom. 
+     * restrict access to amfphp_admin. 
      * @var boolean
      */
     public static $restrictAccess;
@@ -45,7 +45,7 @@ class AmfphpMonitorService {
      */
     public function _getMethodRoles($methodName) {
         if (self::$restrictAccess) {
-            return array('amfphp_atom');
+            return array('amfphp_admin');
         }
     }
     

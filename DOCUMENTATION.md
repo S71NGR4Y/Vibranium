@@ -49,7 +49,7 @@ But to develop or maintain AMF functionality you have to complete several steps.
 
         public function __construct() {
             // ...
-            $this->backOfficeCredentials['atom'] = 'atom';
+            $this->backOfficeCredentials['admin'] = 'admin';
             // ...
         }
     ```
@@ -88,7 +88,7 @@ AMF Revised
 AMFPHP backend is integrated in Hackazon, and accessible via URL `<hackazon_url>/amf_back_office/index.php`.
 All inconsistencies have been fixed (ZIP generating, htaccecc, etc.), so it should work OK in Hackazon.
 Generated files reside in `$DOC_ROOT/web/amf_back_office/ClientGenerator/Generated`.
-Access to backend is left as in previous section: atom:atom.
+Access to backend is left as in previous section: admin:admin.
 
 
 ## Prepare to Flash/Flex

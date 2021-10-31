@@ -9,7 +9,7 @@
                     <span class="caret"></span>
                 </button>
                 <ul role="menu" class="dropdown-menu pull-right">
-                    <li><a href="/atom/<?php $_(strtolower($modelName)); ?>/new">Add new <?php $_($modelName); ?></a></li>
+                    <li><a href="/admin/<?php $_(strtolower($modelName)); ?>/new">Add new <?php $_($modelName); ?></a></li>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@ foreach ($listFields as $field => $data){
 <script type="text/javascript">
     jQuery(function () {
         $('#itemList').dataTable({
-            ajax: '/atom/<?php echo $modelName; ?>/',
+            ajax: '/admin/<?php echo $modelName; ?>/',
             serverSide: true,
             pageLength: 25,
             columns:  JSON.parse('<?php echo json_encode($columns); ?>')

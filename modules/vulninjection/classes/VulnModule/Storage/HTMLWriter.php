@@ -32,12 +32,12 @@ class HTMLWriter implements IWriter
     function __construct(Pixie $pixie)
     {
         $this->pixie = $pixie;
-        $this->viewPath = __DIR__.'/../../../../../assets/views/atom/context';
+        $this->viewPath = __DIR__.'/../../../../../assets/views/admin/context';
     }
 
     public function write(Context $context)
     {
-        $view = $this->pixie->view('atom/context/index');
+        $view = $this->pixie->view('admin/context/index');
         $view->result = $this->renderContext($context);
         return $view->render();
     }
@@ -68,7 +68,7 @@ class HTMLWriter implements IWriter
         }
 
 
-        $view = $this->pixie->view('atom/context/context');
+        $view = $this->pixie->view('admin/context/context');
         $view->vulnerabilities = $vulnerabilities;
         $view->children = $children;
         $view->fields = $fields;
@@ -118,7 +118,7 @@ class HTMLWriter implements IWriter
             $computedVulnerabilities[] = $element->getComputedVulnerability($vulnName)->asArray();
         }
 
-        $view = $this->pixie->view('atom/context/vuln_element');
+        $view = $this->pixie->view('admin/context/vuln_element');
         $view->vulnerabilities = $vulnerabilities;
         $view->computedVulnerabilities = $computedVulnerabilities;
         $view->childrenVulns = $childrenVulns;
@@ -129,7 +129,7 @@ class HTMLWriter implements IWriter
 
     private function renderField(Field $field)
     {
-        $view = $this->pixie->view('atom/context/field');
+        $view = $this->pixie->view('admin/context/field');
         $view->fieldName = $field->getName();
         $view->source = $field->getSource();
         $view->vulnerabilities = $this->renderVulnerabilityTree($field->getVulnerabilityElement());

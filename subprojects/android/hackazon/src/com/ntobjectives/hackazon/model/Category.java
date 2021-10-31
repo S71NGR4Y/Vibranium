@@ -20,7 +20,7 @@ public class Category {
     public Integer products_count;
     public String description;
     public String picture;
-    public Integer products_count_atom;
+    public Integer products_count_admin;
     public String about;
     public String enabled;
     public String meta_title;

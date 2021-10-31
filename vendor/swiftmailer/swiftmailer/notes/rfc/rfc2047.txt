@@ -602,8 +602,8 @@ RFC 2047               Message Header Extensions           November 1996
       octets), except that the second 'encoded-word' uses a different
       'charset' than the first one.
 
-   From: =?ISO-8859-1?Q?Olle_J=E4rnefors?= <ojarnef@atom.kth.se>
-   To: ietf-822@dimacs.rutgers.edu, ojarnef@atom.kth.se
+   From: =?ISO-8859-1?Q?Olle_J=E4rnefors?= <ojarnef@admin.kth.se>
+   To: ietf-822@dimacs.rutgers.edu, ojarnef@admin.kth.se
    Subject: Time for ISO 10646?
 
    To: Dave Crocker <dcrocker@mordor.stanford.edu>

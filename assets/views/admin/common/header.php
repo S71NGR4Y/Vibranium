@@ -1,4 +1,4 @@
-<div id="wrapper" class="atom">
+<div id="wrapper" class="admin">
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/atom/">Hackazon Admin<?='';//(isset($pageTitle) ? " &mdash; " . $pageTitle : "") ?></a>
+    <a class="navbar-brand" href="/admin/">Hackazon Admin<?='';//(isset($pageTitle) ? " &mdash; " . $pageTitle : "") ?></a>
 </div>
 <!-- /.navbar-header -->
 
@@ -25,7 +25,7 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
             </li>
             <li class="divider"></li>
-            <li><a href="/atom/user/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            <li><a href="/admin/user/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
             </li>
         </ul>
         <!-- /.dropdown-user -->
@@ -38,7 +38,7 @@
     <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
             <?php //include __DIR__.'/_search_field.php'; ?>
-            <?php $baseLen = strlen('/atom'); ?>
+            <?php $baseLen = strlen('/admin'); ?>
             <?php if (isset($sidebarLinks)): ?>
             <?php foreach ($sidebarLinks as $sbLink => $sbLinkData): ?>
                 <?php $isLinkActive = strlen($sbLink) <= $baseLen && $_SERVER['REQUEST_URI'] == $sbLink

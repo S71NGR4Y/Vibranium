@@ -213,7 +213,7 @@ class Pixie extends \PHPixie\Pixie {
                     && $this->auth->has_role('admin');
 
                 if ($isAdmin) {
-                    $route_data = $this->router->match('/atom/error/' . $exception->getCode());
+                    $route_data = $this->router->match('/admin/error/' . $exception->getCode());
                 } else {
                     $route_data = $this->router->match('/error/' . $exception->getCode());
                 }

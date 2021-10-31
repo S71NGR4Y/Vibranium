@@ -41,7 +41,7 @@ class Product extends CRUDController
                 'category.name' => [
                     'title' => 'Category',
                     'type' => 'link',
-                    'template' => '/atom/category/%category.categoryID%',
+                    'template' => '/admin/category/%category.categoryID%',
                     'width' => 150
                 ],
                 'Price' => [
@@ -147,7 +147,7 @@ class Product extends CRUDController
             $product->save();
 
             if ($product->loaded()) {
-                $this->redirect('/atom/' . strtolower($product->model_name) . '/edit/'.$product->id());
+                $this->redirect('/admin/' . strtolower($product->model_name) . '/edit/'.$product->id());
                 return;
             }
 
@@ -202,7 +202,7 @@ class Product extends CRUDController
                     }
                 }
 
-                $this->redirect('/atom/' . strtolower($user->model_name) . '/edit/'.$user->id());
+                $this->redirect('/admin/' . strtolower($user->model_name) . '/edit/'.$user->id());
                 return;
             }
         } else {

@@ -55,13 +55,13 @@ class EventListeners
 
         $pixie = $event->getPixie();
         if ($event->getException() instanceof ForbiddenException) {
-            if ($pixie->auth->has_role('atom')) {
+            if ($pixie->auth->has_role('admin')) {
                 return;
             }
             $pixie->session->flash('error', 'You don\'t have permissions to access this resource.');
         }
         $response = new Response($pixie);
-        $response->redirect('/atom/user/login?return_url=' . rawurlencode($_SERVER['REQUEST_URI']));
+        $response->redirect('/admin/user/login?return_url=' . rawurlencode($_SERVER['REQUEST_URI']));
         $event->setResponse($response);
     }
 } 

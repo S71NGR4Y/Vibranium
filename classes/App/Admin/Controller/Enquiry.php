@@ -35,12 +35,12 @@ class Enquiry extends CRUDController
                 'creator.username' => [
                     'is_link' => true,
                     'title' => 'Created By',
-                    'template' => '/atom/user/%creator.id%'
+                    'template' => '/admin/user/%creator.id%'
                 ],
                 'assignee.username' => [
                     'is_link' => true,
                     'title' => 'Assigned To',
-                    'template' => '/atom/user/%assignee.id%'
+                    'template' => '/admin/user/%assignee.id%'
                 ]
             ],
             $this->getEditLinkProp(),

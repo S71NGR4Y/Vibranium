@@ -580,7 +580,7 @@ RFC 2048              MIME Registration Procedures         November 1996
 
    The following procedure has been implemented by the IANA for review
    and approval of new media types.  This is not a formal standards
-   process, but rather an atomistrative procedure intended to allow
+   process, but rather an administrative procedure intended to allow
    community comment and sanity checking without excessive time delay.
    For registration in the IETF tree, the normal IETF processes should
    be followed, treating posting of an internet-draft and announcement

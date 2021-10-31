@@ -22,7 +22,7 @@
     <link href="/css/plugins/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/css/sb-atom-2.css" rel="stylesheet">
+    <link href="/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="/css/plugins/morris.css" rel="stylesheet">
@@ -61,7 +61,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/tools.js"></script>
-    <script src="/js/sb-atom-2.js"></script>
+    <script src="/js/sb-admin-2.js"></script>
 
     <?php if (isset($headScripts)) { echo $headScripts; } ?>
 </head>

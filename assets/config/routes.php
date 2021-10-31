@@ -25,8 +25,8 @@ return array(
             'action' => 'view'
         ),
     ),
-    'atom_error' => array(
-        '/atom/error/<id>',
+    'admin_error' => array(
+        '/admin/error/<id>',
         array(
             'namespace' => 'App\\Admin\\',
             'controller' => 'error',
@@ -69,7 +69,7 @@ return array(
         )
     ],
 
-    'atom_option_value' => array('/atom/option-value(/<action>(/<id>))',
+    'admin_option_value' => array('/admin/option-value(/<action>(/<id>))',
         array(
             'namespace' => 'App\\Admin\\',
             'controller' => 'OptionValue',
@@ -78,7 +78,7 @@ return array(
         )
     ),
 
-    'atom_product_option_value' => array('/atom/product-option-value(/<action>(/<id>))',
+    'admin_product_option_value' => array('/admin/product-option-value(/<action>(/<id>))',
         array(
             'namespace' => 'App\\Admin\\',
             'controller' => 'ProductOptionValue',
@@ -87,9 +87,9 @@ return array(
         )
     ),
 
-    'atom_entity_action' => array(
+    'admin_entity_action' => array(
         array(
-            '/atom/<controller>/<id>/<action>',
+            '/admin/<controller>/<id>/<action>',
             array(
                 'id' => '\d+'
             ),
@@ -102,7 +102,7 @@ return array(
         )
     ),
 
-    'atom' => array('/atom(/<controller>(/<action>(/<id>)))',
+    'admin' => array('/admin(/<controller>(/<action>(/<id>)))',
         array(
             'namespace' => 'App\\Admin\\',
             'controller' => 'home',

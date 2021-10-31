@@ -208,7 +208,7 @@ class Configuration {
 <php><![CDATA[
 <strong>$config = &new MockConfiguration();
 $config->setReturnValue('getValue', 'primary', array('db_host'));
-$config->setReturnValue('getValue', 'atom', array('db_user'));
+$config->setReturnValue('getValue', 'admin', array('db_user'));
 $config->setReturnValue('getValue', 'secret', array('db_password'));</strong>
 ]]></php>
                 The extra parameter is a list of arguments to attempt
@@ -221,7 +221,7 @@ $config->setReturnValue('getValue', 'secret', array('db_password'));</strong>
 <php><![CDATA[
 $config->getValue('db_user')
 ]]></php>
-                ...it will return &quot;atom&quot;.
+                ...it will return &quot;admin&quot;.
                 It finds this by attempting to match the calling arguments
                 to its list of returns one after another until
                 a complete match is found.

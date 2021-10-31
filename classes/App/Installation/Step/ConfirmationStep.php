@@ -194,10 +194,10 @@ class ConfirmationStep extends AbstractStep
         $this->pixie->db->get()->execute("SET foreign_key_checks = 1;");
 
         //$params = $this->pixie->config->get('parameters');
-        $atomCredentials = $this->previousSteps['atom_credentials']->getViewData();
+        $adminCredentials = $this->previousSteps['admin_credentials']->getViewData();
         /** @var User $userModel */
         $userModel = $this->pixie->orm->get('User');
-        $userModel->changeUserPassword('atom', $atomCredentials['password']);
+        $userModel->changeUserPassword('admin', $adminCredentials['password']);
     }
 
     /**
@@ -220,11 +220,11 @@ class ConfirmationStep extends AbstractStep
             $this->canWrite = false;
         }
 
-        if (isset($this->previousSteps['atom_credentials'])) {
-            $atomCredSettings = $this->previousSteps['atom_credentials']->getViewData();
+        if (isset($this->previousSteps['admin_credentials'])) {
+            $adminCredSettings = $this->previousSteps['admin_credentials']->getViewData();
             $this->pixie->config->load_inherited_group('parameters');
             $paramsConfig = $this->pixie->config->get_group('parameters');
-            $paramsConfig['installer_password'] = $atomCredSettings['password'];
+            $paramsConfig['installer_password'] = $adminCredSettings['password'];
             $this->writeConfigFile($this->configDir . "/parameters.php", $paramsConfig);
 
         } else {

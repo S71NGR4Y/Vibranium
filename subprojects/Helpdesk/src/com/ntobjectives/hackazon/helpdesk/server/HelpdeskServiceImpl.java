@@ -19,7 +19,7 @@ public class HelpdeskServiceImpl extends RemoteServiceServlet implements Helpdes
     int enquiryMessageCounter = 0;
 
     protected User currentUser;
-    protected User atom;
+    protected User admin;
 
     public HelpdeskServiceImpl() {
         super();
@@ -28,10 +28,10 @@ public class HelpdeskServiceImpl extends RemoteServiceServlet implements Helpdes
         currentUser.setFirstName("Вася");
         currentUser.setId(1);
 
-        atom = new User();
-        atom.setUsername("atom");
-        atom.setFirstName("Administrator");
-        atom.setId(2);
+        admin = new User();
+        admin.setUsername("admin");
+        admin.setFirstName("Administrator");
+        admin.setId(2);
 
         prepareData();
     }
@@ -182,7 +182,7 @@ public class HelpdeskServiceImpl extends RemoteServiceServlet implements Helpdes
             m.setEnquiry(enquiries.get(1));
             m.setMessage("Admin answered message 1");
             createEnquiryMessage(m);
-            m.setAuthor(atom);
+            m.setAuthor(admin);
 
             m = new EnquiryMessage();
             m.setEnquiry(enquiries.get(1));

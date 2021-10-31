@@ -174,9 +174,9 @@ class Installer
             $this->firstStep->propagateSettings($this->pixie, $this->view, false);
 
         } else {
-            $atomStep = new AdminCredentialsStep();
+            $adminStep = new AdminCredentialsStep();
             $this
-                ->addStep($atomStep)
+                ->addStep($adminStep)
                 ->addStep(new DBSettingsStep())
                 ->addStep(new EmailSettingsStep())
                 ->addStep(new ConfirmationStep());
@@ -188,8 +188,8 @@ class Installer
             if ($this->isReinstallation) {
                 $params = $this->pixie->config->get('parameters');
                 $pass = $params['installer_password'];
-                $atomStep->execute('POST', ['password' => $pass, 'password_confirmation' => $pass]);
-                $nextStep = $atomStep->getNextStep();
+                $adminStep->execute('POST', ['password' => $pass, 'password_confirmation' => $pass]);
+                $nextStep = $adminStep->getNextStep();
                 $nextStep->start();
             }
 

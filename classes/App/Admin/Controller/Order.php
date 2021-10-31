@@ -38,7 +38,7 @@ class Order extends CRUDController
                 'customer.username' => [
                     'title' => 'Customer Username',
                     'is_link' => true,
-                    'template' => '/atom/user/edit/%customer.id%'
+                    'template' => '/admin/user/edit/%customer.id%'
                 ],
                 'status' => [
                     'type' => 'status'

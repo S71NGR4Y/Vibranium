@@ -80,7 +80,7 @@ CREATE TABLE `tbl_categories` (
   `products_count` int(11) DEFAULT NULL,
   `description` longtext,
   `picture` varchar(255) DEFAULT NULL,
-  `products_count_atom` int(11) DEFAULT NULL,
+  `products_count_admin` int(11) DEFAULT NULL,
   `about` text,
   `enabled` int(11) DEFAULT NULL,
   `meta_title` varchar(255) DEFAULT NULL,

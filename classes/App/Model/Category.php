@@ -11,7 +11,7 @@ use VulnModule\VulnerableField;
  * @property string description
  * @property int parent
  * @property int products_count
- * @property int products_count_atom
+ * @property int products_count_admin
  * @property string picture
  * @property string about
  * @property string meta_title

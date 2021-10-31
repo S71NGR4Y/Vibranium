@@ -26,7 +26,7 @@ class Controller extends BaseController
     public $view;
     public $common_path;
 
-    public $root = '/atom';
+    public $root = '/admin';
 
     /**
      * @var User
@@ -46,7 +46,7 @@ class Controller extends BaseController
         $this->view->common_path = $config['common_path'];
         $this->view->returnUrl = '';
         $this->view->controller = $this;
-        $this->view->atomRoot = $this->root;
+        $this->view->adminRoot = $this->root;
         $className = isset($this->modelName) && $this->modelName ? $this->modelName : $this->get_real_class($this);
         $this->view->sidebarLinks = $this->getSidebarLinks();
 
@@ -77,7 +77,7 @@ class Controller extends BaseController
         parent::after();
     }
 
-    public function view($name, $group = 'atom')
+    public function view($name, $group = 'admin')
     {
         return $this->pixie->view(($group ? $group . '/' : '') . $name);
     }

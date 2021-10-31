@@ -5,7 +5,7 @@
     <title>Vulnerability Debugger</title>
     <link rel="stylesheet" href="/css/bootstrap.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
-    <link rel="stylesheet" href="/css/sb-atom-2.css"/>
+    <link rel="stylesheet" href="/css/sb-admin-2.css"/>
     <link rel="stylesheet" href="/css/vuln.css"/>
     <!-- MetisMenu CSS -->
     <link href="/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet" />
