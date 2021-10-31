@@ -90,12 +90,12 @@ if ($config->fetchAmfphpUpdates) {
                         <input type="submit" id="runTest" value="Run Test" onclick="runTestClickHandler()"></input>
                         <div id="statusMessage" class="warning"> </div>
                     </div>
-                    <div id="amfCallerContainer">
+                    <!-- <div id="amfCallerContainer">
                         Flash Player is needed to make AMF calls. 
                         <a target="_blank" href="http://www.adobe.com/go/getflashplayer">
                             <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
                         </a>
-                    </div>                       
+                    </div>                        -->
                 </div>
             </div>
         </div>            
